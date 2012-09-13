@@ -6,7 +6,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TouchAndHoldButton : UIButton
+@interface NBTouchAndHoldButton : UIButton
 
 - (void)addTarget:(id)target action:(SEL)action forTouchAndHoldControlEventWithTimeInterval:(NSTimeInterval)periodTime;
 

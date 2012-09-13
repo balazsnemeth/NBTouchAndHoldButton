@@ -4,9 +4,9 @@
 //  Created by Balázs Nemeth on 9/13/12.
 //
 
-#import "TouchAndHoldButton.h"
+#import "NBTouchAndHoldButton.h"
 
-@implementation TouchAndHoldButton{
+@implementation NBTouchAndHoldButton{
     NSTimer* holdTimer;
     NSTimeInterval dt;
     NSValue* repeateSelectorAsValue;
