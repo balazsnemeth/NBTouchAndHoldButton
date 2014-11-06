@@ -10,7 +10,7 @@
     NSTimer* holdTimer;
     NSTimeInterval dt;
     NSValue* repeateSelectorAsValue;
-    id targetOfRepeatSel;
+    __weak typeof(id) targetOfRepeatSel;
 }
 /*
 - (id)initWithFrame:(CGRect)frame
