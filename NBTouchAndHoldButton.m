@@ -67,7 +67,7 @@
 
 - (void) sourceTouchDown:(UIButton*) sender {
     SEL selector;
-    if (strcmp([repeateSelectorAsValue objCType], @encode(SEL)) == 0) {
+    if ((holdTimer == nil) && (strcmp([repeateSelectorAsValue objCType], @encode(SEL)) == 0)) {
         [repeateSelectorAsValue getValue:&selector];
         holdTimer = [NSTimer scheduledTimerWithTimeInterval:dt  target:targetOfRepeatSel selector:selector userInfo:nil repeats: YES];
     }
